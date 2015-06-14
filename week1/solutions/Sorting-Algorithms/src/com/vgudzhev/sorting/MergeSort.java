@@ -22,7 +22,6 @@ public class MergeSort implements Sortable {
 	}
 
 	private void merge(int left, int middle, int right) {
-
 	    for (int i = left; i <= right; i++) {
 	      tempArray[i] = arr[i];
 	    }
@@ -44,7 +43,7 @@ public class MergeSort implements Sortable {
 	      index++;
 	    }
 	    
-	    // if i > middle the elements are in right order
+	    // if leftIndex > leftEnd the elements are in right order in original array
 	    while (leftIndex <= leftEnd) {
 	      arr[index] = tempArray[leftIndex];
 	      index++;
